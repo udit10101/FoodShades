@@ -193,7 +193,7 @@ app.get('/useraccount', checkNotAuthenticated, async (req, res) => {
   const user = req.user
   res.render('account', { user })
 })
-app.get('/VegOnly', async (req, res) => {
+app.get('/VegOnly',checkNotAuthenticated, async (req, res) => {
   let resObjs = []
 
   const data = await pool.query(`Select * from additionalinfo where category='V'`)
@@ -205,7 +205,7 @@ app.get('/VegOnly', async (req, res) => {
   output = output.replace('{%nav-color-vegonly%}', 'nav-color-vegonly')
   res.send(output)
 })
-app.get('/ByRating', async (req, res) => {
+app.get('/ByRating',checkNotAuthenticated, async (req, res) => {
   let resObjs = []
   for (var i = 0; i < resNamesObj.length; i++) {
     const data = await pool.query(`Select * from additionalinfo where resname='${resNamesObj[i].resname}'`)
@@ -218,7 +218,7 @@ app.get('/ByRating', async (req, res) => {
   output = output.replace('{%nav-color-rating%}', 'nav-color-rating')
   res.send(output)
 })
-app.get('/ByDeliveryTime', async (req, res) => {
+app.get('/ByDeliveryTime', checkNotAuthenticated,async (req, res) => {
   let resObjs = []
   for (var i = 0; i < resNamesObj.length; i++) {
     const data = await pool.query(`Select * from additionalinfo where resname='${resNamesObj[i].resname}'`)
@@ -232,7 +232,7 @@ app.get('/ByDeliveryTime', async (req, res) => {
 
   res.send(output)
 })
-app.get('/Category=:dish', async (req, res) => {
+app.get('/Category=:dish',checkNotAuthenticated, async (req, res) => {
   let resObjs = []
 
   const data = await pool.query(`Select * from additionalinfo where typefood='${req.params.dish}'`)
@@ -245,7 +245,7 @@ app.get('/Category=:dish', async (req, res) => {
 
   res.send(output)
 })
-app.get('/Restaurants', async (req, res) => {
+app.get('/Restaurants',checkNotAuthenticated, async (req, res) => {
   let resObjs = []
   const data = await pool.query(`Select * from additionalinfo where resname='${req.query.rname}'`)
 
