@@ -258,14 +258,14 @@
 
   .btn-danger {
     color: white;
-    background-color: #EB5757;
+    background-color: #ff2525;
     border: none;
-    border-radius: .3em;
-    font-weight: bold;
+    border-radius: 0.5em;
+    /* font-weight: bold;*/
   }
 
   .btn-danger:hover {
-    background-color: #CC4C4C;
+    background-color: #fe2121;
   }
 
   .cart-quantity-input {
@@ -320,14 +320,15 @@
   }
 
   .btn {
-    top: 0.3vh;
+top: 0.3vh;
     text-align: center;
-    height: 4vh;
+    /* height: 4vh; */
     /* vertical-align: middle; */
     /* padding: 0.67em 0.67em; */
-    padding: 5%;
+    padding: 0.5em 1em;
     cursor: pointer;
     position: relative;
+    font-family: 'Poppins';
   }
 
   .btn-primary {
