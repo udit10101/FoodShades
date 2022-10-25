@@ -42,7 +42,7 @@ const observer = new IntersectionObserver(
     //   top: options.getBoundingClientRect().top + window.pageYOffset,
     //   behaviour: "smooth",
     // });
-    options.scrollIntoView(true, { behavior: "smooth" });
+    // options.scrollIntoView(true, { behavior: "smooth" });
     opt1.style.opacity = 100;
     opt2.style.opacity = 100;
     opt1.style.transform = "translateY(0)";
