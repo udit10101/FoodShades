@@ -9,224 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="style2.css">
-    <style>
-        .res-card {
-            width: 20vw;
-            /* border: 2px solid #1d1616; */
-            display: flex;
-            flex-direction: column;
-            font-size: 2vh;
-            font-family: 'Poppins';
-            font-weight: bold;
-            border-radius: 4%;
-
-        }
-
-        .res-card-link {
-            text-decoration: none;
-            color: black;
-
-        }
-
-        .res-img img {
-            height: 26vh;
-            width: 20vw;
-            border-radius: 4%;
-
-        }
-
-        .res-desc {
-            display: flex;
-            /* border: 2px solid black; */
-            justify-content: space-between;
-            padding: 0.3vh;
-
-        }
-
-        .res-footer {
-            display: flex;
-            /* border: 2px solid black; */
-            position: relative;
-            justify-content: space-between;
-            font-weight: 600;
-            top: 0.3vh;
-            color: black;
-        }
-
-        .res-name {
-            position: relative;
-            font-size: 2.3vh;
-            left: 2.5%;
-            top: -0.3vh;
-        }
-
-        .res-type {
-            position: relative;
-            right: 3%;
-            color: #6a6262;
-            top: 9%;
-        }
-
-        .res-rating {
-            border: 2px solid #21d037;
-            border-radius: 12%;
-            position: relative;
-            left: 7%;
-            color: white;
-            background-color: #3cbd3c;
-        }
-
-        .res-category {
-
-            position: relative;
-            right: 6%;
-        }
-
-        .res_container {
-
-            
-            /* border: 2px solid black; */
-            width: 80vw;
-            margin: 2% auto;
-            left: 10vw;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10%;
-            padding-bottom: 12%;
-
-
-
-        }
-
-        .sortBar {
-            display: flex;
-            border: 2px px solid #000000;
-            border-radius: 0%;
-            height: 6vh;
-            width: 80vw;
-            margin: 1.5% auto;
-            background-color: #383838;
-            left: 10%;
-            justify-content: space-evenly;
-            font-size: 2.3vh;
-            align-items: center;
-            border-radius: 15px;
-
-
-
-        }
-
-        .sortBar a {
-            text-decoration: none;
-            color: #fbf0f0
-        }
-
-        /* Style The Dropdown Button */
-        .dropbtn {
-            background-color: transparent;
-            /* padding: 16px; */
-            font-size: 2.3vh;
-            border: none;
-            cursor: pointer;
-            color: #fbf0f0
-        }
-
-        /* The container <div> - needed to position the dropdown content */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-
-        }
-
-        /* Dropdown Content (Hidden by Default) */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        /* Links inside the dropdown */
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {
-            background-color: #f1f1f1
-        }
-
-        /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        /* Change the background color of the dropdown button when the dropdown content is shown */
-        .dropdown:hover .dropbtn {
-            background-color: transparent;
-        }
-
-        .nav-color-c {
-            color: orange;
-        }
-
-        .nav-color-vegonly a {
-            color: orange;
-        }
-
-        .nav-color-all a {
-            color: orange;
-        }
-
-        .nav-color-deliverytime a {
-            color: orange;
-        }
-
-        .nav-color-rating a {
-            color: orange;
-        }
-
-        .logout {
-            position: relative;
-            right: 21vh;
-            top: 1vh;
-        }
-    </style>
-    <script>
-        function searchFnc() {
-            // Declare variables
-            let input, filter, ul, li, a, i, txtValue;
-            input = document.getElementById('searchbar');
-            filter = input.value.toUpperCase();
-            console.log(filter);
-            restCont = document.getElementsByClassName('res_container')[0]
-            res = document.getElementsByClassName('res-card')
-            resnames = restCont.getElementsByClassName('res-name')
-
-            // Loop through all list items, and hide those who don't match the search query
-            for (i = 0; i < res.length; i++) {
-                let match = res[i].getElementsByClassName('res-name')[0]
-                let txtValue = match.textContent || match.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    res[i].style.display = " "
-                } else {
-                    res[i].style.display = "none "
-                }
-                if (!filter) {
-                    console.log("empty rea");
-                    for (i = 0; i < res.length; i++) {
-                        res[i].style.display = "block"
-                    }
-
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="index2.css" />
+    <script defer src="index2.js"></script>
+    <script src="home.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -357,7 +143,36 @@
         {%res-cards%}
 
     </div>
-    
+    <div class="footer">
+      <div class="content">
+        <div class="company">
+          <h1>Support</h1>
+          <p>Who are we</p>
+          <p>Careers</p>
+          <p>Team</p>
+          <p>Report Fraud</p>
+        </div>
+        <div class="legal">
+          <h1>Legal</h1>
+          <p>Terms & Conditions</p>
+          <p>Refund & Cancellation</p>
+          <p>Privacy Policy</p>
+          <p>Offer Terms</p>
+        </div>
+        <div class="support">
+          <h1>Support</h1>
+          <p>help@foodshades.abc</p>
+          <p>(+91) 1234567890</p>
+          <p>(+91) 1234567891</p>
+        </div>
+        <a class="nameFooter" href="#">FoodShades</a>
+        <div class="icons">
+          <img src="Images/facebook.svg" alt="" class="mediaHandle facebook" data-name = 'facebook'/>
+          <img src="Images/linkedin.svg" alt="" class="mediaHandle linkedin" data-name = 'linkedin'/>
+          <img src="Images/instagram.svg" alt="" data-name = 'instagram' class="mediaHandle instagram" />
+        </div>
+      </div>
+    </div>
 
 </body>
 
