@@ -1,7 +1,7 @@
 // const footer = document.querySelector(".footer");
 
 
-const iconHover = function (element) {
+const iconHoverFooter = function (element) {
   element.addEventListener("mouseenter", function () {
     element.src = `Images/${element.dataset.name}-fill.svg`;
   });
@@ -10,6 +10,6 @@ const iconHover = function (element) {
   });
 };
 
-iconHover(document.querySelector(".instagram"));
-iconHover(document.querySelector(".facebook"));
-iconHover(document.querySelector(".linkedin"));
+iconHoverFooter(document.querySelector(".instagram"));
+iconHoverFooter(document.querySelector(".facebook"));
+iconHoverFooter(document.querySelector(".linkedin"));
