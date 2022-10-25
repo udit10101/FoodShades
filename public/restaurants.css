@@ -215,6 +215,9 @@
     font-weight: bold;
     font-size: 1.25em;
     color: #333;
+       border-bottom: 1px solid black;
+    padding-bottom: 10px;
+
   }
 
   .cart-column {
@@ -222,7 +225,6 @@
     align-items: center;
     border-bottom: 1px solid black;
     margin-right: 1.5em;
-    padding-bottom: 10px;
     margin-top: 10px;
   }
 
