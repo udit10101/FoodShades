@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <style>
+        .dishes-container {
+            /* border: 2px solid black; */
+            display: inline-block;
+            width: 47vw;
+            height: 63vh;
+            position: absolute;
+            top: 50vh;
+            left: 24vw;
+            font-size: 2vh;
+        }
+
+        .dish-card {
+            border: 2px solid black;
+            height: 20vh;
+            width: 25vw;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .dish-image img {
+            top: -4vh;
+            position: relative;
+            /* border: 2px solid black; */
+            right: -13vw;
+            height: 15vh;
+            width: 25vh;
+        }
+
+        .dish-name {
+            position: relative;
+            top: 2vh;
+            left: 1vh;
+        }
+
+        .dish-price {
+            position: relative;
+            left: 1vh;
+            top: 3vh;
+        }
+
+        .dish-desc {
+            position: relative;
+            top: -10vh;
+            left: 1vh;
+        }
+
+        .addbtn {
+            position: relative;
+            top: -6vh;
+            left: 19vw;
+        }
+
+        .dish-category {
+            color: green;
+            padding: 0 0.3em;
+            top: -23.5vh;
+            position: relative;
+            left: 50vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+        {%dishes%}
+    </div>
+</body>
+
+</html>

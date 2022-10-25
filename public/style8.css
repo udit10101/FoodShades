@@ -1,0 +1,204 @@
+html {
+  font-size: 10px;
+  font-family: "Poppins";
+}
+
+.orderDetailsCont {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(234, 234, 234, 0.7);
+  width: 100%;
+  /* height: 100vh; */
+}
+
+.orderDetailsDisplay {
+  width: 64%;
+  background-color: white;
+  margin: 3rem 3rem;
+  border-radius: 4rem;
+  padding-bottom: 10rem;
+  /* float: left; */
+}
+
+.orderedDishesHeading {
+  width: 85%;
+  border-bottom-style: solid;
+  border-width: 1.5px;
+  padding-bottom: 2rem;
+  border-color: rgb(151, 151, 151);
+  margin-top: 5rem;
+  /* margin-left: 15rem; */
+  margin-bottom: 2rem;
+  margin-left: 6rem;
+}
+
+.selectedHeadingOrdered {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.dishesOrderDetails {
+  margin-top: 5rem;
+  margin-left: 18rem;
+}
+
+.dishesOrderDetailsHeading {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.orderedDishDisplayRest {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
+  /* margin-left: 40rem; */
+  width: 62rem;
+  justify-content: space-between;
+  border-bottom-style: solid;
+  border-width: 1.5px;
+  padding-bottom: 3rem;
+  border-color: rgba(200, 200, 200, 1);
+}
+
+.orderedDishDisplayNameRest {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.orderedDishDisplayPriceRest {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+}
+
+.orderedDishDescriptionRest {
+  width: 42rem;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+.orderedDishDetailsDescriptionRest2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#orderedDishDescriptionImg {
+  width: 11rem;
+}
+
+.orderedDishQuantity {
+  font-size: 1.1rem;
+}
+
+.billDetailsRating {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.priceSummary {
+  /* width: 30%; */
+  background-color: white;
+  margin: 3rem 0 1rem 0;
+  border-radius: 4rem;
+  height: fit-content;
+  padding-bottom: 7rem;
+}
+
+.orderedPriceSummaryHeading {
+  font-size: 2rem;
+  font-weight: 500;
+  width: 80%;
+  border-bottom-style: solid;
+  border-width: 1.5px;
+  padding-bottom: 2rem;
+  border-color: rgb(151, 151, 151);
+  margin-top: 5rem;
+  /* margin-left: 15rem; */
+  margin-bottom: 5rem;
+  margin-left: 4rem;
+}
+
+.orderedPriceSummaryIndv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* width: 80%; */
+  /* margin-left: 4rem; */
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.perDishPriceDetails {
+  border-bottom-style: solid;
+  width: 80%;
+  margin-left: 4rem;
+  border-width: 1.5px;
+  border-color: rgb(151, 151, 151);
+  padding-bottom: 3rem;
+}
+
+.orderedPriceSummaryIndvSubtotal {
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 4rem;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+}
+
+.orderedPriceSummaryIndvTotal {
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 4rem;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.ratingOrderPlaced {
+  background-color: white;
+  margin: 3rem 0;
+  border-radius: 4rem;
+  height: fit-content;
+}
+
+.borderContRating {
+  display: flex;
+  /* height: fit-content; */
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  border-bottom-style: solid;
+  border-width: 1.5px;
+  padding-bottom: 2rem;
+  border-color: rgb(151, 151, 151);
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  margin-left: 4rem;
+}
+
+.orderedRatingSummaryHeading {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.ratingImg {
+    display: flex;
+}
+
+.ratingBtn {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.ratingImgStar {
+  width: 2.5rem;
+}

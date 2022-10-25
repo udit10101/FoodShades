@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Poppins";
+  font-size: 10px;
+}
+
+.pastOrderCont {
+  background-color: rgba(234, 234, 234, 0.8);
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.pastOrderDetails {
+  background-color: white;
+  width: 85%;
+  height: fit-content;
+  margin-top: 3rem;
+  margin-left: 12rem;
+  border-radius: 3rem;
+  margin-bottom: 5rem;
+}
+
+.pastOrderOrders {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  justify-content: space-between;
+  border-bottom-style: solid;
+  border-width: 2px;
+  padding-bottom: 3rem;
+  border-color: rgba(200, 200, 200, 1);
+  margin-top: 6rem;
+  margin-left: 15rem;
+  /* margin-bottom: 1rem; */
+}
+
+.pastOrderHeading {
+  font-size: 2rem;
+  font-weight: 500;
+  position: relative;
+  top: 0.8rem;
+}
+
+.pastOrderList {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  min-height: 100vh;
+}
+
+.pastOrderOrder1 {
+  width: 63%;
+  border-bottom-style: solid;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-width: 1.5px;
+  border-color: rgba(200, 200, 200, 1);
+  margin-top: 8rem;
+}
+
+.pastOrderImgPrice {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pastOrder1Img {
+  width: 22rem;
+}
+
+.pastOrder1Price {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+}
+
+.restNameOrderedDateDishes {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.restNameOrderedDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+/* .pastOrderRestDetails {
+  position: relative;
+  right: 5rem;
+} */
+
+.pastOrderRestName {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.pastOrderDate {
+  font-size: 1.3rem;
+  height: fit-content;
+}
+
+.pastOrderRestLocation {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.pastOrderRestType {
+  font-size: 1.3rem;
+}
+
+.pastOrderDishesOrdered {
+  margin-top: 1.5rem;
+  font-size: 1.35rem;
+  line-height: 3rem;
+}

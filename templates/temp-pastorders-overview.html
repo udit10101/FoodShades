@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodShades</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style9.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+     <script src="geolocation.js"></script>
+    <script defer src="homepage.js"></script>
+  </head>
+  <body>
+    
+    <div class="navbar">
+      <a href="/home"><div class="name">FoodShades</div></a>
+      <div class="navContents">
+        <div class="homepageLocationSearch">
+          <div class="location">
+            <img src="Images/location.png" alt="Location" class="imgLocation" />
+            <div class="address">Building, City</div>
+          </div>
+          <!-- <input type="text" name="searchBar" placeholder="Search Restaurant" class="homepageSearchBar"> -->
+          
+        </div>
+        <div class="homepageNavIcons">
+          <a href="/pastOrders"><div class="homePagePastOrders iconNameDiv">
+            <img
+              src="Images/pastOrder.svg"
+              alt="Past Orders"
+              data-name="pastOrder"
+              class="homePagePastOrdersImg"
+            />
+            <div class="homePagePastOrderName">Past Orders</div>
+          </div>
+      </a>
+         <a href="/useraccount"> <div class="homepageAccount iconNameDiv">
+            <img
+              src="Images/account.svg"
+              alt="Account"
+              class="homepageAccountImg"
+              data-name="account"
+            />
+            <div class="homepageAccountName">Account</div>
+          </div>
+      </a>
+      <a href="/users/logout">
+          <div class="homepageLogOut iconNameDiv">
+            <img
+              src="Images/logOut.svg"
+              alt="Log Out"
+              class="homepageLogOutImg"
+              data-name="logOut"
+            />
+            <div class="homepageLogOutName">Log Out</div>
+          </div>
+      </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pastOrderCont">
+      <div class="pastOrderDetails">
+        <div class="pastOrderOrders">
+          <div class="pastOrderHeading">Past Orders</div>
+          <!-- <button class="updateAccount">Update</button> -->
+        </div>
+        <div class="pastOrderList">
+          {%pastorders%}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

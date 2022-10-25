@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <title>FoodShades</title>
+  <link rel="stylesheet" href="style1.css">
+  
+
+
+</head>
+
+<body>
+  <div class="black"></div>
+  <div class="main" id="mainBg">
+    <div class="name" id="name1">FoodShades</div>
+    <div class="name" id="name2">Get served as an Emperor</div>
+    <div class="buttons">
+      <button class="signUp" id="log1">
+        Get Started <img src="Images/Arrow2.png" alt="" id="arrow" />
+      </button>
+      <div class="message">
+        <% if (typeof message !=='undefined' ) { %>
+          <p>
+            <%= message %>
+          </p>
+          <% } %>
+      </div>
+
+      <button class="signUp" id="log2"> <a href="/users=login">Login </a></button>
+    </div>
+  </div>
+  <div class="options">
+    <a href="/users=login">
+      <div class="cont1">
+        <div class="outline1">
+          <img src="Images/Food.png" alt="" class="box1" />
+          <div class="info1" id="info1a" href="#">
+            <a href="#"> Hungry? </a>
+          </div>
+          <div class="info2" id="info1a">
+            <a href="#"> Order Now </a>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="/resAuth">
+      <div class="cont2">
+        <img src="Images/restaurant.png" alt="" class="box2" />
+        <div class="info1">
+          <a href="#" id="info1b" class="info1">Your restaurant, Delivered</a>
+        </div>
+        <div class="info2" id="info1b">
+          <a href="#"> Update Your Restaurant </a>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="footer">
+    <div class="content">
+      <div class="company">
+        <h1>Support</h1>
+        <p>Who are we</p>
+        <p>Careers</p>
+        <p>Team</p>
+        <p>Report Fraud</p>
+      </div>
+      <div class="legal">
+        <h1>Legal</h1>
+        <p>Terms & Conditions</p>
+        <p>Refund & Cancellation</p>
+        <p>Privacy Policy</p>
+        <p>Offer Terms</p>
+      </div>
+      <div class="support">
+        <h1>Support</h1>
+        <p>help@foodshades.abc</p>
+        <p>(+91) 1234567890</p>
+        <p>(+91) 1234567891</p>
+      </div>
+      <a class="nameFooter" href="#mainBg">FoodShades</a>
+      <div class="icons">
+        <img src="Images/facebook.png" alt="" class="mediaHandle" />
+        <img src="Images/linkedin.png" alt="" class="mediaHandle" />
+        <img src="Images/instagram.png" alt="" class="mediaHandle" />
+      </div>
+    </div>
+  </div>
+
+  <script>
+    "use strict";
+
+    const background = document.querySelector(".main");
+    const boxBlack = document.querySelector(".black");
+    const headingName = document.querySelector("#name1");
+    const headingLine = document.querySelector("#name2");
+    const buttons = document.querySelector(".buttons");
+    const options = document.querySelector(".options");
+    const opt1 = document.querySelector(".cont1");
+    const opt2 = document.querySelector(".cont2");
+    const nameFooter = document.querySelector(".nameFooter");
+
+    document.addEventListener("DOMContentLoaded", function (e) {
+      boxBlack.style.transform = "translateX(-50vw)";
+      headingName.style.opacity = 100;
+      headingLine.style.transform = "translateY(0)";
+      buttons.style.transform = "translateY(0)";
+      headingLine.style.opacity = 100;
+      buttons.style.opacity = 100;
+    });
+
+    const observer = new IntersectionObserver(
+      function (entries) {
+        const [entry] = entries;
+        if (!entry.isIntersecting) return;
+        opt1.style.opacity = 100;
+        opt2.style.opacity = 100;
+        opt1.style.transform = "translateY(0)";
+        opt2.style.transform = "translateY(0)";
+      },
+      {
+        root: null,
+        threshold: 0.1,
+      }
+    );
+
+    observer.observe(options);
+
+    nameFooter.addEventListener("click", function (e) {
+      e.preventDefault();
+      document
+        .querySelector(e.target.getAttribute("href"))
+        .scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodShades</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style4.css" />
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <script defer src="signIn.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins";
+      font-size: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .container1 {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #signUpimage {
+      width: 75em;
+    }
+
+    .signUpDetails {
+      position: relative;
+      height: 80vh;
+      margin-top: 15vh;
+      left: 10vw;
+    }
+
+    .msg1 {
+      font-weight: 500;
+      font-size: 3em;
+    }
+
+    .msg2 {
+      font-size: 1.5em;
+      padding-top: 0.8em;
+    }
+
+    .emailmsg {
+      font-size: 2em;
+      padding-top: 1.5em;
+      padding-bottom: 0.8em;
+      font-weight: 500;
+    }
+
+    .enterText {
+      width: 23vw;
+      height: 53px;
+      border-radius: 1em;
+      border-style: solid;
+      font-family: "Poppins";
+      font-size: 1.3em;
+      padding-left: 1.5em;
+    }
+
+    .otherOptions {
+      display: flex;
+      flex-direction: row;
+      margin-top: 2.2em;
+    }
+
+    label {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #checkbox1 {
+      margin-right: 0.8em;
+    }
+
+    #sp1 {
+      font-family: "Poppins";
+      font-size: 1.4em;
+      margin-left: 0.3em;
+    }
+
+    #fg1 {
+      font-size: 1.4em;
+      padding-left: 8.7em;
+    }
+
+    .signUpbtn {
+      margin-top: 2.5em;
+    width: 24.5vw;
+    height: 60px;
+    border-style: solid;
+    background-color: black;
+    border-radius: 1.1em;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+    }
+
+    .signUplink {
+      font-size: 1.3em;
+      font-weight: 500;
+      position: relative;
+      top: 1em;
+      left: 8.4em;
+    }
+
+    .errmess {
+      font-size: 1.8vh;
+      position: relative;
+      top: 1%;
+
+    }
+  </style>
+  <script>
+    function passToggle() {
+
+      let x = document.getElementsByClassName('myPass')[0];
+
+      if (x.type == "password") {
+        console.log('changing');
+        x.type = "text";
+
+      } else {
+        x.type = "password";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container1">
+    <div class="signImg">
+      <img src="Images/signInimage.png" alt="" id="signUpimage1" />
+      <img src="Images/signUpimage.png" alt="" id="signUpimage2" />
+    </div>
+    <div class="signUpDetails">
+
+      <div class="msg1">Welcome Back</div>
+      <div class="msg2">Please Enter your Details</div>
+      <div class="errmess">
+        <ul>
+          <% if (typeof errors !='undefined' ) { %>
+            <% errors.forEach(error=> { %>
+              <li>
+                <%= error.message %>
+              </li>
+              <% }) %>
+                <% } %>
+        </ul>
+
+        <ul>
+          <% if(messages.success_msg) { %>
+            <li>
+              <%= messages.success_msg %>
+            </li>
+            <% } %>
+        </ul>
+
+        <ul>
+          <% if (messages.error) { %>
+            <li>
+              <%= messages.error %>
+            </li>
+            <% } %>
+        </ul>
+      </div>
+      <form action="/users=login" method="POST">
+        <div class="email">
+          <div class="emailmsg">Email</div>
+          <input type="email" name="email" id="email" placeholder="Enter your Email" required class="enterText" />
+        </div>
+        <div class="password">
+          <div class="emailmsg">Password</div>
+          <input type="password" name="password" id="password" placeholder="Enter your Password" required
+            class="enterText myPass" />
+        </div>
+        
+        <div class="otherOptions">
+          <label for="checkbox1">
+            <input type="checkbox" id="checkbox1" onclick="passToggle()" />
+            <span id="sp1">Show Password</span>
+          </label>
+          <a href="#" id="fg1">Forgot Password?</a>
+        </div>
+        <div class="btn">
+          <input type="submit" value="Login" class="signUpbtn" />
+        </div>
+      </form>
+      <a href="/users=register" class="signUplink">Don't have an Account?</a>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="content">
+      <div class="company">
+        <h1>Support</h1>
+        <p>Who are we</p>
+        <p>Careers</p>
+        <p>Team</p>
+        <p>Report Fraud</p>
+      </div>
+      <div class="legal">
+        <h1>Legal</h1>
+        <p>Terms & Conditions</p>
+        <p>Refund & Cancellation</p>
+        <p>Privacy Policy</p>
+        <p>Offer Terms</p>
+      </div>
+      <div class="support">
+        <h1>Support</h1>
+        <p>help@foodshades.abc</p>
+        <p>(+91) 1234567890</p>
+        <p>(+91) 1234567891</p>
+      </div>
+      <a class="nameFooter" href="#mainBg">FoodShades</a>
+      <div class="icons">
+        <img src="Images/facebook.png" alt="" class="mediaHandle" />
+        <img src="Images/linkedin.png" alt="" class="mediaHandle" />
+        <img src="Images/instagram.png" alt="" class="mediaHandle" />
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

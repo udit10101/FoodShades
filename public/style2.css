@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #ffffff;
+  font-size: 100%;
+}
+
+.navbar {
+  height: 75px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  /* z-index: ; */
+}
+
+.header {
+  position: absolute;
+  /* z-index: -1; */
+  box-shadow: 0.5px 0.5px 7px -1px rgba(0, 0, 0, 0.324);
+  height: 75px;
+  width: 100%;
+}
+
+.name {
+  font-family: "Poppins", sans-serif;
+  /* width: 50%; */
+  font-size: 2rem;
+  color: black;
+  font-weight: 600;
+  display: inline-block;
+  /* position: relative; */
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+}
+
+.navContents {
+  /* position: relative; */
+  /* height: 75px; */
+  /* left: 50vw; */
+  /* top: 18px; */
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 5rem;
+}
+
+.homepageLocationSearch {
+  display: flex;
+  flex-direction: row;
+  /* margin-left: 19rem; */
+}
+
+.location {
+  /* position: relative; */
+  /* left: 16rem; */
+  /* bottom: 2px; */
+  /* top: 2px; */
+  /* transform: scale(0.8); */
+  display: flex;
+  align-items: center;
+}
+
+.address {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  float: right;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  /* position: relative; */
+  /* transform: translateX(10px); */
+  /* top: 5px; */
+}
+
+.imgLocation {
+  height: 2.5rem;
+}
+
+.homepageSearchBarDiv {
+  margin-right: 2rem;
+}
+
+.homepageSearchBar {
+  width: 28vw;
+  /* position: relative; */
+  height: 3.5rem;
+  /* transform: translateX(200px); */
+  /* left: 22rem; */
+  border-style: solid;
+  border-radius: 1rem;
+  /* transform: scale(0.8); */
+  border-width: 1.5px;
+  margin: 0 0 0 5rem;
+  padding-left: 1.8rem;
+  font-size: 1.2rem;
+  /* z-index: 1; */
+}
+
+.searchIcon {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+  top: 0.3rem;
+  right: 3.5rem;
+}
+
+.homepageNavIcons {
+  display: flex;
+  flex-direction: row;
+}
+
+.iconNameDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 5rem;
+}
+
+/* .homePagePastOrders {
+} */
+
+.homePagePastOrdersImg {
+  /* float: right; */
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1.3rem;
+}
+
+.homepageAccountImg {
+  margin-right: 1.3rem;
+  width: 3rem;
+  height: 3rem;
+  /* top: 3px; */
+  /* position: relative; */
+  /* transform: scale(0.8); */
+  /* left: 22rem; */
+}
+
+.homepageLogOutImg {
+  margin-right: 1.3rem;
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.homepageBanner {
+  width: 100%;
+  background-color: #f1f1f1;
+  /* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
+}
+
+.homepageBannerImg {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  height: 37.5rem;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.banner {
+  position: absolute;
+  transition: transform 1s;
+  margin-top: 3rem;
+}
+
+.bannerImg {
+  width: 100%;
+}
+
+.btnBanner {
+  width: 5rem;
+  height: 5rem;
+  background-color: black;
+  z-index: 1;
+  border-radius: 10rem;
+}
+
+.leftBanner {
+  position: absolute;
+  /* top: 10rem; */
+  top: 32vh;
+  left: 2vw;
+}
+.rightBanner {
+  position: absolute;
+  top: 32vh;
+  left: 94vw;
+}
+
+.btnArrow {
+  height: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.btnArrowLeft {
+  rotate: 180deg;
+}
+.navbar a{
+  text-decoration: none;
+  color: black;
+
+}
+

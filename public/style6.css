@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Poppins';
+  font-size: 10px;
+}
+
+.accountCont {
+  background-color: rgba(234, 234, 234, 0.8);
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.accountDetails {
+  background-color: white;
+  width: 85%;
+  height: 150vh;
+  margin-top: 3rem;
+  margin-left: 12rem;
+  border-radius: 3rem;
+  margin-bottom: 5rem;
+}
+
+.accountAccount {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  justify-content: space-between;
+  border-bottom-style: solid;
+  border-width: 1.5px;
+  padding-bottom: 2rem;
+  border-color: rgba(200, 200, 200, 1);
+  margin-top: 6rem;
+  margin-left: 15rem;
+  margin-bottom: 6rem;
+}
+.messageResponse {
+  font-size: 2vh;
+  position: relative;
+  left: 40vh;
+}
+.messagesucResponse{
+  font-size: 2vh;
+    top: 28vh;
+    position: absolute;
+    left: 90vh;
+}
+.selectedHeading {
+  font-size: 2rem;
+  font-weight: 500;
+  position: relative;
+  top: 3.8rem;
+}
+
+.updateAccount {
+  background-color: white;
+  border-color: rgba(200, 200, 200, 0.8);
+  color: rgb(81, 81, 81);
+  border-style: solid;
+  padding: 1.2rem 2.2rem;
+}
+#detailsUpdateBtn {
+  position: relative;
+  top: 0vh;
+  left: 110vh;
+}
+#passstyle {
+  right: 51vw;
+}
+
+.accoutDetailsDisplayProp {
+  display: flex;
+  flex-direction: row;
+  margin-left: 15rem;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+}
+
+.accountUpdateDetails {
+  width: 36%;
+  position: relative;
+  top: 1.2rem;
+}
+
+.accountInputDisplay {
+  font-family: 'Poppins';
+  padding: 1.3rem 3rem;
+  width: 35%;
+}
+
+.accountChangePassword {
+  margin-top: 10rem;
+}

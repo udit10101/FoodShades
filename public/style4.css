@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+}
+
+#signUpimage {
+  width: 75em;
+    height: 100vh;
+}
+
+.signUpDetails {
+  position: relative;
+  height: 80vh;
+  margin-top: 15vh;
+  left: 10vw;
+}
+
+.msg1 {
+  font-weight: 500;
+  font-size: 3em;
+}
+
+.msg2 {
+  font-size: 1.5em;
+  padding-top: 0.8em;
+}
+
+.emailmsg {
+  font-size: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 0.8em;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+.enterText {
+  width: 23vw;
+  height: 53px;
+  border-radius: 1em;
+  border-style: solid;
+  font-family: "Poppins";
+  font-size: 1.3em;
+  padding-left: 1.5em;
+}
+
+.otherOptions {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.2em;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+}
+
+#checkbox1 {
+  margin-right: 0.8em;
+}
+
+#sp1 {
+  font-family: "Poppins";
+  font-size: 1.4em;
+  margin-left: 0.3em;
+}
+
+#fg1 {
+  font-size: 1.4em;
+  padding-left: 8.7em;
+}
+
+.signUpbtn {
+  margin-top: 2.5em;
+  width: 24.5vw;
+  height: 60px;
+  border-style: solid;
+  background-color: black;
+  border-radius: 1.1em;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.signUplink {
+  font-size: 1.3em;
+  font-weight: 500;
+  position: relative;
+  top: 1em;
+  left: 8.4em;
+}
+.signImg {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+#signUpimage1 {
+  /* position: absolute; */
+  width: 75em;
+  opacity: 100;
+  transition: all 2s;
+}
+
+#signUpimage2 {
+  position: absolute;
+  /* overflow: hidden; */
+  /* right: 75em; */
+  /* right: 76em; */
+  width: 75em;
+  opacity: 0;
+  transition: all 2s;
+}
