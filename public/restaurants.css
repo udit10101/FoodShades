@@ -227,7 +227,10 @@
   }
 
   .cart-row {
+   
+   margin: 2em 0;
     display: flex;
+    padding-bottom: 2em;
   }
 
   .cart-item {
@@ -258,14 +261,15 @@
 
   .btn-danger {
     color: white;
-    background-color: #ff2525;
+    background-color: #eb5757;
     border: none;
     border-radius: 0.5em;
     /* font-weight: bold;*/
   }
 
+
   .btn-danger:hover {
-    background-color: #fe2121;
+    background-color: #cc4c4c;
   }
 
   .cart-quantity-input {
