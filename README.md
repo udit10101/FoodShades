@@ -9,6 +9,8 @@
 > Food Ordering Application
 
 ## Project Description
+NOTE : We were unaware till the last moment that ejs was not allowed to use and we have used it only to make message templates to show messages like incorrect password
+,details updated successfully,etc and with permission from aasf executives.
 
 Food Ordering application for webkriti.
 
