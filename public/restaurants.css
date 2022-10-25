@@ -13,6 +13,10 @@
     --cartHeight: 65vh;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   .restContainer {
     width: 100%;
     height: 40vh;
@@ -119,15 +123,15 @@
     /* position: absolute; */
     /* top: 50vh; */
     /* left: 20vw; */
-      margin-left:3vw;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
-  padding-bottom: 10rem;
-  border-radius: 2rem;
-  /* width: 63vw; */
-  background-color: white;
+    margin-left: 3vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    padding: 3em 0 10em 12em;
+    border-radius: 2rem;
+    /* width: 63vw; */
+    background-color: white;
     font-size: 2vh;
-    /* margin: 0% 15%; */
+    /* margin: 0% 15%;*/
   }
 
  .content-section {
@@ -137,14 +141,20 @@
 .cartContainer {
     max-width: 25vw;
     /* margin: 0 5rem; */
-    padding: 0 1.5em;
-          margin-left:3vw;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
-  padding-bottom: 10rem;
-  border-radius: 2rem;
-  /* width: 63vw; */
-  background-color: white;
+    padding: 3em 5em 6em 5em;
+    margin-left: 3vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    /* padding-bottom: 10rem; */
+    border-radius: 2rem;
+    /* width: 63vw; */
+    background-color: white;
+    /* right: -29vw; */
+    /* position: relative; */
+    /* top: -82vh; */
+    height: fit-content;
+    width: 23vw;
+
     /* right: -29vw; */
     /* position: relative; */
     /* top: -82vh; */
@@ -571,8 +581,8 @@
   }
 
   .placeOrder {
-    margin-top: 3.5em;
-    margin-left: 10rem;
+    margin-top: 5em;
+    margin-left: 4rem;
     width: 27rem;
     height: 55px;
     border-style: solid;
@@ -584,11 +594,9 @@
     font-size: 1.5em;
   }
   .orderDetails{
-    width: 59%;
-  height: 7vh;
-  position: relative;
-  left: 5%;
-  bottom: 4vh;
+        font-size: 1.5em;
+    text-decoration-line: underline;
+    margin: 2em 0 0 8.5em;
   }
 
   
