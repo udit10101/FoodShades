@@ -107,14 +107,14 @@
 
 
   .dishes-container {
-    /* border: 2px solid black; */
     display: inline-block;
     width: 47vw;
-    height: 63vh;
-    position: absolute;
+    height: fit-content;
+    /* position: absolute; */
     top: 50vh;
     left: 20vw;
     font-size: 2vh;
+    margin: 0% 15%;
   }
 
   .dish-card {
@@ -275,7 +275,7 @@
     padding: 0 1.5em;
     right: -29vw;
     position: relative;
-    top: 5vh;
+    top: -82vh;
 
   }
 
