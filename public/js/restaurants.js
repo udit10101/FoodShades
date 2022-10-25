@@ -101,12 +101,12 @@ if (document.readyState == 'loading') {
       }
     }
     let cartRowContents = `
-      <div class="cart-item cart-column">
+      <div class="cart-item">
           <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
           <span class="cart-item-title">${title}</span>
       </div>
-      <span class="cart-price cart-column">${price}</span>
-      <div class="cart-quantity cart-column">
+      <span class="cart-price">${price}</span>
+      <div class="cart-quantity">
           <input class="cart-quantity-input" type="number" value="1">
           <button class="btn btn-danger" type="button">Remove</button>
       </div>`
