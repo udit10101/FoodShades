@@ -11,12 +11,12 @@
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <script src="geolocation.js"></script>
+    <script src="js/geolocation.js"></script>
   <link rel="stylesheet" href="restaurants.css">
-  <script src="restaurants.js"></script>
-  <script defer src="homepage.js"></script>
+  <script src="js/restaurants.js"></script>
+  <script defer src="js/homepage.js"></script>
   <link rel="stylesheet" href="footer.css" />
-    <script defer src="footer.js"></script>
+    <script defer src="js/footer.js"></script>
 </head>
 
 <body>
@@ -97,10 +97,13 @@
       </div>
     </div>
   </div>
+
+  <div class="restDishCartCont">
+
   <div class="dishes-container">
     {%dishes%}
   </div>
-  <section class="container content-section">
+  <section class="cartContainer content-section">
     <h2 class="section-header"></h2>
     <div class="cart-row">
       <span class="cart-item cart-header cart-column">ITEM</span>
@@ -118,6 +121,8 @@
     <a href="/orderDetails" class="orderDetails" style="display: none;">Order Details</a>
     
   </section>
+  </div>
+
   <div class="footer">
       <div class="content">
         <div class="company">

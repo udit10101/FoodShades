@@ -105,16 +105,50 @@
     padding-bottom: 1.5rem;
   }
 
+  .restDishCartCont {
+    display: flex;
+    flex-direction: row;
+  background-color: rgba(234, 234, 234, 0.5);
+
+  }
 
   .dishes-container {
-    display: inline-block;
+    /* display: inline-block; */
     width: 47vw;
     height: fit-content;
     /* position: absolute; */
-    top: 50vh;
-    left: 20vw;
+    /* top: 50vh; */
+    /* left: 20vw; */
+      margin-left:3vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  padding-bottom: 10rem;
+  border-radius: 2rem;
+  /* width: 63vw; */
+  background-color: white;
     font-size: 2vh;
-    margin: 0% 15%;
+    /* margin: 0% 15%; */
+  }
+
+ .content-section {
+    margin: 1em;
+  }
+
+.cartContainer {
+    max-width: 25vw;
+    /* margin: 0 5rem; */
+    padding: 0 1.5em;
+          margin-left:3vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  padding-bottom: 10rem;
+  border-radius: 2rem;
+  /* width: 63vw; */
+  background-color: white;
+    /* right: -29vw; */
+    /* position: relative; */
+    /* top: -82vh; */
+
   }
 
   .dish-card {
@@ -265,19 +299,7 @@
 
 
 
-  .content-section {
-    margin: 1em;
-  }
 
-  .container {
-    max-width: 25vw;
-    margin: 0 auto;
-    padding: 0 1.5em;
-    right: -29vw;
-    position: relative;
-    top: -82vh;
-
-  }
 
   .section-header {
     font-family: "Metal Mania";
@@ -568,3 +590,5 @@
   left: 5%;
   bottom: 4vh;
   }
+
+  
