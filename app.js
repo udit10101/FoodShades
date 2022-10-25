@@ -177,7 +177,7 @@ app.post(
   })
 )
 
-app.get('/home', async (req, res) => {
+app.get('/home',checkNotAuthenticated, async (req, res) => {
   let resObjs = []
   for (var i = 0; i < resNamesObj.length; i++) {
     const data = await pool.query(`Select * from additionalinfo where resname='${resNamesObj[i].resname}'`)
