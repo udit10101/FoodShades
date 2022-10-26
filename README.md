@@ -115,8 +115,9 @@ For Restaurant Owners
 
 
 ## Local Setup
+execute node app.js in terminal after cloning the project 
 
-Note that database connection string, passport client id & secret keys are in env file which are not uploaded on github
+Note that database connection string, passport client id & secret keys are in env file which are not uploaded on github 
 
 ### Built With
 
