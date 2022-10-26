@@ -126,7 +126,7 @@ Note that database connection string, passport client id & secret keys are in en
 
 ### Udit Karan Tomar (2021IMT-104)
 
-- Github: [@udit10101](hhttps://github.com/udit10101)
+- Github: [@udit10101](https://github.com/udit10101)
 - LinkedIn: [@udit-tomar](https://www.linkedin.com/in/udit-tomar-a07323235/)
 - Gmail: [mail](mailto:bandarysohan24@gmail.com)
 - Instagram: [@uditktomar](https://www.instagram.com/uditktomar/)
