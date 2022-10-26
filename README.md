@@ -141,7 +141,7 @@ Note that database connection string, passport client id & secret keys are in en
 - Gmail: [mail](mailto:pawar.pranav83@gmail.com)
 - Instagram: [@pranav.pawar_](https://www.instagram.com/pranav.pawar_/)
 
-##Mentors:
+## Mentors:
 We are very thankful to our mentors [@Sohan2410](https://github.com/sohan2410) Sir, kartikey Sir, and Chirag sir who helped us immensely in our website, 
 even at festive season too :) 
 
