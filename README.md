@@ -131,7 +131,7 @@ Note that database connection string, passport client id & secret keys are in en
 
 - Github: [@udit10101](https://github.com/udit10101)
 - LinkedIn: [@udit-tomar](https://www.linkedin.com/in/udit-tomar-a07323235/)
-- Gmail: [mail](mailto:bandarysohan24@gmail.com)
+- Gmail: [mail](mailto:uditkarantomar2003@gmail.com)
 - Instagram: [@uditktomar](https://www.instagram.com/uditktomar/)
 
 ### Pranav Panwar (2021IMT-074)
@@ -140,6 +140,10 @@ Note that database connection string, passport client id & secret keys are in en
 - LinkedIn: [@pranav-pawar](https://www.linkedin.com/in/pranav-pawar-b54954242/)
 - Gmail: [mail](mailto:pawar.pranav83@gmail.com)
 - Instagram: [@pranav.pawar_](https://www.instagram.com/pranav.pawar_/)
+
+##Mentors:
+We are very thankful to our mentors [@Sohan2410](https://github.com/sohan2410) Sir, kartikey Sir, and Chirag sir who helped us immensely in our website, 
+even at festive season too :) 
 
 ## Show your support
 
