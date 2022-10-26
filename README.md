@@ -147,4 +147,4 @@ even at festive season too :)
 
 ## Show your support
 
-Give a ⭐️ if this project helped you!
+Give a ⭐️ if this project liked it
