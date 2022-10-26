@@ -37,17 +37,19 @@ For Restaurant Owners
 
 # Screen shots
 
-<img src="assets/images/landing_page1.jpeg"></img>
-<img src="assets/images/landing_page2.jpeg"></img>
-<img src="assets/images/signin1.jpeg"></img>
-<img src="assets/images/signin2.jpeg"></img>
-<img src="assets/images/feed.jpeg"></img>
-<img src="assets/images/create_a_post.jpeg"></img>
-<img src="assets/images/feedback.jpeg"></img>
-<img src="assets/images/view_profile.jpeg"></img>
-<img src="assets/images/edit_delete_post.jpeg"></img>
-<img src="assets/images/edit_profile.jpeg"></img>
-<img src="assets/images/startup.jpeg"></img>
+<img src="Screenshot/SignIn.png"></img>
+<img src="Screenshot/logIn.png"></img>
+<img src="Screenshot/RestaurantOwnerAuth.png"></img>
+<img src="Screenshot/indexpage.png"></img>
+<img src="Screenshot/Homepage.png"></img>
+<img src="Screenshot/HomepageRestaurant.png"></img>
+<img src="Screenshot/RestaurantPage.png"></img>
+<img src="Screenshot/AccountDetails.png"></img>
+<img src="Screenshot/ChangePassword.png"></img>
+<img src="Screenshot/PastOrders.png"></img>
+<img src="Screenshot/orderdetails.png"></img>
+<img src="Screenshot/AddDishModal.png"></img>
+<img src="Screenshot/EditDishModal.png"></img>
 
 ### 🏠 [Homepage](/public)
 
