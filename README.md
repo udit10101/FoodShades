@@ -59,6 +59,8 @@ For Restaurant Owners
 
 ## Features
 
+###FrontEnd
+
 1. Landing page:
 
 - The landing page contains the overview of the website about how we intend the users to use this website.
@@ -95,6 +97,33 @@ For Restaurant Owners
 
 - The restaurant owner can edit their existing dish, by using the Edit Dish Button, then a modal window would pop up, which contains the dish information, that can be edited - dish name, image link, price, catergory, and description.
 - Now the onwer can also add new dish using the Add Dish Button, and all the above details must be filled.
+
+### Back-End
+- Get Routes
+```
+/
+/home
+/useraccount
+/users/logout
+/VegOnly
+/ByRating
+/ByDeliveryTime
+/Category=:dish
+/Restaurants
+/form=:restname
+/resAuth
+/orderDetails
+/pastOrders
+```
+- Post Routes
+```
+/users=register
+/resUpdate=:restname
+/updateUserInfo
+/updateUserPassword
+/cartItems
+/ratingUpdate
+```
 
 # Technologies/Libraries/Packages Used
 
