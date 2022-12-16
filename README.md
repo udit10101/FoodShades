@@ -53,13 +53,13 @@ For Restaurant Owners
 
 ### 🏠 [Homepage](/public)
 
-### ✨ [Deployed site](https://foodshades.herokuapp.com/)
+### ✨ [Deployed site](https://foodshades.up.railway.app/)
 
 # Features Implemented
 
 ## Features
 
-###FrontEnd
+### FrontEnd
 
 1. Landing page:
 
