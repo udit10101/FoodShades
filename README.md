@@ -10,8 +10,6 @@
 
 ## Project Description
 
-Food Ordering application for webkriti.
-
 For Customers
 
 - Users can create their account in our database and sign in.
