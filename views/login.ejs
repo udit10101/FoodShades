@@ -9,14 +9,14 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="style4.css" />
-  <link rel="stylesheet" href="style1.css" />
-  <link rel="stylesheet" href="footer.css" />
-    <script defer src="js/footer.js"></script>
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <script defer src="js/signIn.js"></script>
+  <link rel="stylesheet" href="./../css/style4.css" />
+  <link rel="stylesheet" href="./../css/style1.css" />
+  <link rel="stylesheet" href="./../css/footer.css" />
+    <script defer src="./../js/footer.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./../favicon/favicon-16x16.png">
+  <script defer src="./../js/signIn.js"></script>
   <style>
     * {
       margin: 0;
@@ -135,7 +135,7 @@
       let x = document.getElementsByClassName('myPass')[0];
 
       if (x.type == "password") {
-        console.log('changing');
+        // console.log('changing');
         x.type = "text";
 
       } else {
@@ -148,8 +148,8 @@
 <body>
   <div class="container1">
     <div class="signImg">
-      <img src="Images/signInimage.png" alt="" id="signUpimage1" />
-      <img src="Images/signUpimage.png" alt="" id="signUpimage2" />
+      <img src="./../Images/signInimage.png" alt="" id="signUpimage1" />
+      <img src="./../Images/signUpimage.png" alt="" id="signUpimage2" />
     </div>
     <div class="signUpDetails">
 
@@ -182,7 +182,7 @@
             <% } %>
         </ul>
       </div>
-      <form action="/users=login" method="POST">
+      <form action="/users/login" method="POST">
         <div class="email">
           <div class="emailmsg">Email</div>
           <input type="email" name="email" id="email" placeholder="Enter your Email" required class="enterText" />
@@ -204,7 +204,7 @@
           <input type="submit" value="Login" class="signUpbtn" />
         </div>
       </form>
-      <a href="/users=register" class="signUplink">Don't have an Account?</a>
+      <a href="/users/register" class="signUplink">Don't have an Account?</a>
     </div>
   </div>
   <!-- <div class="footer">
@@ -261,9 +261,9 @@
         </div>
         <a class="nameFooter" href="/">FoodShades</a>
         <div class="icons">
-          <img src="Images/facebook.svg" alt="" class="mediaHandle facebook" data-name = 'facebook'/>
-          <img src="Images/linkedin.svg" alt="" class="mediaHandle linkedin" data-name = 'linkedin'/>
-          <img src="Images/instagram.svg" alt="" data-name = 'instagram' class="mediaHandle instagram" />
+          <img src="./../Images/facebook.svg" alt="" class="mediaHandle facebook" data-name = 'facebook'/>
+          <img src="./../Images/linkedin.svg" alt="" class="mediaHandle linkedin" data-name = 'linkedin'/>
+          <img src="./../Images/instagram.svg" alt="" data-name = 'instagram' class="mediaHandle instagram" />
         </div>
       </div>
     </div>

@@ -7,16 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
   <title>FoodShades</title>
-  <link rel="stylesheet" href="style2.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <script src="js/geolocation.js"></script>
+  <link rel="stylesheet" href="./../css/style2.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./../favicon/favicon-16x16.png">
+  <script src="./../js/geolocation.js"></script>
   <link rel="stylesheet" href="restaurants.css">
-  <script src="js/restaurants.js"></script>
+  <script src="./../js/restaurants.js"></script>
   <script defer src="js/homepage.js"></script>
-  <link rel="stylesheet" href="footer.css" />
-  <script defer src="js/footer.js"></script>
+  <link rel="stylesheet" href="./../css/footer.css" />
+  <script defer src="./../js/footer.js"></script>
   <style>
     * {
       margin: 0;
@@ -693,7 +693,7 @@
         cartItems.removeChild(cartItems.firstChild)
       }
       updateCartTotal()
-      console.log("dome");
+      // console.log("dome");
     }
 
     function removeCartItem(event) {
@@ -716,7 +716,7 @@
       let title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
       let price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
       let imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
-      console.log(imageSrc);
+      // console.log(imageSrc);
       addItemToCart(title, price, imageSrc)
       updateCartTotal()
     }
@@ -761,7 +761,7 @@
         total = total + (price * quantity)
       }
       document.getElementsByClassName('cart-total-price')[0].innerText = ' ₹' + total
-      console.log(total);
+      // console.log(total);
     }
 
     function searchFnc() {
@@ -769,7 +769,7 @@
       let input, filter, ul, li, a, i, txtValue;
       input = document.getElementById('searchbar');
       filter = input.value.toUpperCase();
-      console.log(filter);
+      // console.log(filter);
       restCont = document.getElementsByClassName('dishes-container')[0]
       res = document.getElementsByClassName('dishDisplay')
       resnames = restCont.getElementsByClassName('dishDisplayName')
@@ -784,7 +784,7 @@
           res[i].style.display = "none "
         }
         if (!filter) {
-          console.log("empty rea");
+          // console.log("empty rea");
           for (i = 0; i < res.length; i++) {
             res[i].style.display = "flex"
           }
@@ -806,7 +806,7 @@
     <div class="navContents">
       <div class="homepageLocationSearch">
         <div class="location">
-          <img src="Images/location.png" alt="Location" class="imgLocation" />
+          <img src="./../Images/location.png" alt="Location" class="imgLocation" />
           <div class="address">Building, City</div>
         </div>
         <!-- <input type="text" name="searchBar" placeholder="Search Restaurant" class="homepageSearchBar"> -->
@@ -815,13 +815,13 @@
             onkeyup="searchFnc()" />
           <!-- <img src="Images/search.png" alt="" class="searchIcon" /> -->
           <!-- <input class="search"> -->
-          <img src="Images/search.png" alt="" class="searchIcon" />
+          <img src="./../Images/search.png" alt="" class="searchIcon" />
         </div>
       </div>
       <div class="homepageNavIcons">
         <a href="/pastOrders">
           <div class="homePagePastOrders iconNameDiv">
-            <img src="Images/pastOrder.svg" alt="Past Orders" data-name="pastOrder" class="homePagePastOrdersImg" />
+            <img src="./../Images/pastOrder.svg" alt="Past Orders" data-name="pastOrder" class="homePagePastOrdersImg" />
             <div class="homePagePastOrderName">Past Orders</div>
           </div>
         </a>
@@ -910,9 +910,9 @@
       </div>
       <a class="nameFooter" href="#">FoodShades</a>
       <div class="icons">
-        <img src="Images/facebook.svg" alt="" class="mediaHandle facebook" data-name='facebook' />
-        <img src="Images/linkedin.svg" alt="" class="mediaHandle linkedin" data-name='linkedin' />
-        <img src="Images/instagram.svg" alt="" data-name='instagram' class="mediaHandle instagram" />
+        <img src="./../Images/facebook.svg" alt="" class="mediaHandle facebook" data-name='facebook' />
+        <img src="./../Images/linkedin.svg" alt="" class="mediaHandle linkedin" data-name='linkedin' />
+        <img src="./../Images/instagram.svg" alt="" data-name='instagram' class="mediaHandle instagram" />
       </div>
     </div>
   </div>

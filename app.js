@@ -11,7 +11,7 @@ const bcrypt = require('bcrypt')
 const passport = require('passport')
 const flash = require('express-flash')
 const session = require('express-session')
-app.use(express.static('public'))
+app.use(express.static(`${__dirname}/public`))
 app.use(express.json())
 app.use(bodyParser.json())
 app.use(bodyParser.text())
@@ -86,17 +86,17 @@ function checkNotAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
     return next()
   }
-  res.redirect('/users=login')
+  res.redirect('/users/login')
 }
 //Routes
 app.get('/', (req, res) => {
   res.render('index2')
 })
-app.get('/users=register', checkAuthenticated, (req, res) => {
+app.get('/users/register', checkAuthenticated, (req, res) => {
   res.render('register.ejs')
 })
 
-app.get('/users=login', checkAuthenticated, (req, res) => {
+app.get('/users/login', checkAuthenticated, (req, res) => {
   // flash sets a messages variable. passport sets the error message
   // console.log(req.session.flash.error)
   res.render('login.ejs')
@@ -107,11 +107,11 @@ app.get('/users/logout', (req, res) => {
     if (err) {
       return next(err)
     }
-    res.redirect('/users=login')
+    res.redirect('/users/login')
   })
 })
 
-app.post('/users=register', async (req, res) => {
+app.post('/users/register', async (req, res) => {
   let { name, email, password, password2 } = req.body
 
   let errors = []
@@ -159,7 +159,7 @@ app.post('/users=register', async (req, res) => {
               }
 
               req.flash('success_msg', 'You are now registered. Please log in')
-              res.redirect('/users=login')
+              res.redirect('/users/login')
             }
           )
         }
@@ -169,10 +169,10 @@ app.post('/users=register', async (req, res) => {
 })
 
 app.post(
-  '/users=login',
+  '/users/login',
   passport.authenticate('local', {
     successRedirect: '/home',
-    failureRedirect: '/users=login',
+    failureRedirect: '/users/login',
     failureFlash: true,
   })
 )
@@ -429,8 +429,8 @@ app.get('/pastOrders', checkNotAuthenticated, async (req, res) => {
   let ordersHtml = ''
   const maxTransId = maxTransIdArrayObj.rows[0].max - 0
   const minTransId = minTransIdArrayObj.rows[0].min - 0
-  console.log(maxTransId)
-  console.log(minTransId)
+  // console.log(maxTransId)
+  // console.log(minTransId)
   for (let i = maxTransId; i >= minTransId; i--) {
     let orders = await pool.query(`SELECT * FROM "Past Orders" where transid=${i} AND userid=${userId}`)
     if (orders.rows.length > 0) {
