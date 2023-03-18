@@ -8,7 +8,7 @@ const btnOpenModalEdit = document.querySelectorAll(".editDish");
 const btnCloseModal = document.querySelector(".modalClosebtn");
 const modal = document.querySelector(".modalWindowEditRest");
 overlay.style.height = bodyHeight;
-console.log(btnOpenModalEdit);
+
 
 const openModal = function () {
   modal.classList.remove("hidden");

@@ -3,7 +3,7 @@ function searchFnc() {
     let input, filter, ul, li, a, i, txtValue;
     input = document.getElementById('searchbar');
     filter = input.value.toUpperCase();
-    console.log(filter);
+   
     restCont = document.getElementsByClassName('res_container')[0]
     res = document.getElementsByClassName('res-card')
     resnames = restCont.getElementsByClassName('res-name')
@@ -18,7 +18,7 @@ function searchFnc() {
             res[i].style.display = "none "
         }
         if (!filter) {
-            console.log("empty rea");
+            
             for (i = 0; i < res.length; i++) {
                 res[i].style.display = "block"
             }

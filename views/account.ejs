@@ -30,28 +30,28 @@
     <div class="navContents">
       <div class="homepageLocationSearch">
         <div class="location">
-          <img src="Images/location.png" alt="Location" class="imgLocation" />
+          <img src="./../Images/location.png" alt="Location" class="imgLocation" />
           <div class="address">Building, City</div>
         </div>
         <!-- <input type="text" name="searchBar" placeholder="Search Restaurant" class="homepageSearchBar"> -->
 
       </div>
       <div class="homepageNavIcons">
-        <a href="/pastOrders">
+        <a href="/user/pastOrders">
           <div class="homePagePastOrders iconNameDiv">
-            <img src="Images/pastOrder.svg" alt="Past Orders" data-name="pastOrder" class="homePagePastOrdersImg" />
+            <img src="./../Images/pastOrder.svg" alt="Past Orders" data-name="pastOrder" class="homePagePastOrdersImg" />
             <div class="homePagePastOrderName">Past Orders</div>
           </div>
         </a>
-        <a href="/useraccount">
+        <a href="/user/account">
           <div class="homepageAccount iconNameDiv">
-            <img src="Images/account.svg" alt="Account" class="homepageAccountImg" data-name="account" />
+            <img src="./../Images/account.svg" alt="Account" class="homepageAccountImg" data-name="account" />
             <div class="homepageAccountName">Account</div>
           </div>
         </a>
-        <a href="/users/logout">
+        <a href="/user/logout">
           <div class="homepageLogOut iconNameDiv">
-            <img src="Images/logOut.svg" alt="Log Out" class="homepageLogOutImg" data-name="logOut" />
+            <img src="./../Images/logOut.svg" alt="Log Out" class="homepageLogOutImg" data-name="logOut" />
             <div class="homepageLogOutName">Log Out</div>
           </div>
         </a>
@@ -62,7 +62,7 @@
   <div class="accountCont">
     <div class="accountDetails">
       <div class="accountAccount">
-        <form action="/updateUserInfo" method="post">
+        <form action="/user/updateInfo" method="post">
           <div class="selectedHeading">Account Details</div>
           <button class="updateAccount" type="submit" id="detailsUpdateBtn">Update</button>
       </div>
@@ -113,7 +113,7 @@
                 <% } %>
             </ul>
           </div>
-          <form action="/updateUserPassword" method="post">
+          <form action="/user/updatePassword" method="post">
             <div class="selectedHeading" id="passstyle">Change Password</div>
             <button class="updateAccount" type="submit">Update</button>
         </div>

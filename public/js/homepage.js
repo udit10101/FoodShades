@@ -3,42 +3,7 @@
 const homepagePastOrders = document.querySelector('.homePagePastOrders')
 const homepageAccount = document.querySelector('.homepageAccount')
 const homepageLogOut = document.querySelector('.homepageLogOut')
-//   homepageAccount.style.fontSize = "1.3rem";
-//   homepageAccount.style.fontWeight = "600";
 
-// const homepageHoverAnimation = function (element) {
-//   //   element.style.fontSize = "1.3rem";
-//   element.style.fontWeight = "600";
-// };
-// // homepageHoverAnimation(homepageAccount);
-
-// const homepageCounterHoverAnimation = function (element) {
-//   element.style.fontWeight = "500";
-// };
-
-// homepageAccount.addEventListener("mouseenter", function () {
-//   console.log("Hi");
-//   homepageHoverAnimation(this);
-// });
-
-// homepagePastOrders.addEventListener("mouseenter", function () {
-//   homepageHoverAnimation(this);
-// });
-
-// homepageLogOut.addEventListener("mouseenter", function () {
-//   homepageHoverAnimation(this);
-// });
-
-// homepageAccount.addEventListener("mouseleave", function () {
-//   console.log("Hi");
-//   homepageCounterHoverAnimation(this);
-// });
-// homepagePastOrders.addEventListener("mouseleave", function () {
-//   homepageCounterHoverAnimation(this);
-// });
-// homepageLogOut.addEventListener("mouseleave", function () {
-//   homepageCounterHoverAnimation(this);
-// });
 
 const slides = document.querySelectorAll('.banner')
 const btnLeft = document.querySelector('.leftBanner')
@@ -99,29 +64,29 @@ if (slides.length!==0) {
 
   btnLeft.addEventListener('mouseenter', function () {
     hoverAnimation(this)
-    btnArrowLeft.src = 'Images/Arrow2.png'
+    btnArrowLeft.src = './../Images/Arrow2.png'
   })
 
   btnLeft.addEventListener('mouseleave', function () {
     counterHoverAnimation(this)
-    btnArrowLeft.src = 'Images/Arrow.png'
+    btnArrowLeft.src = './../Images/Arrow.png'
   })
   btnRight.addEventListener('mouseenter', function () {
     hoverAnimation(this)
-    btnArrowRight.src = 'Images/Arrow2.png'
+    btnArrowRight.src = './../Images/Arrow2.png'
   })
 
   btnRight.addEventListener('mouseleave', function () {
     counterHoverAnimation(this)
-    btnArrowRight.src = 'Images/Arrow.png'
+    btnArrowRight.src = './../Images/Arrow.png'
   })
 }
 const iconHover = function (element, img) {
   element.addEventListener('mouseenter', function () {
-    img.src = `Images/${img.dataset.name}-fill.svg`
+    img.src = `./../Images/${img.dataset.name}-fill.svg`
   })
   element.addEventListener('mouseleave', function () {
-    img.src = `Images/${img.dataset.name}.svg`
+    img.src = `./../Images/${img.dataset.name}.svg`
   })
 }
 

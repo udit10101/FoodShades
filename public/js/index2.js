@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
   buttons.style.opacity = 100;
 });
 
-console.log(options.getBoundingClientRect());
+
 
 const observer = new IntersectionObserver(
   function (entries) {
@@ -95,12 +95,12 @@ const counterHoverAnimation = function (element) {
 
 getStarted.addEventListener("mouseenter", function () {
   hoverAnimation(this);
-  arrowImg.src = "Images/Arrow.png";
+  arrowImg.src = "./../Images/Arrow.png";
 });
 
 getStarted.addEventListener("mouseleave", function () {
   counterHoverAnimation(this);
-  arrowImg.src = "Images/Arrow2.png";
+  arrowImg.src = "./../Images/Arrow2.png";
 });
 
 logIn.addEventListener("mouseenter", hoverAnimation.bind(logIn, logIn));
@@ -108,10 +108,10 @@ logIn.addEventListener("mouseleave", counterHoverAnimation.bind(logIn, logIn));
 
 const iconHover = function (element) {
   element.addEventListener("mouseenter", function () {
-    element.src = `Images/${element.dataset.name}-fill.svg`;
+    element.src = `./../Images/${element.dataset.name}-fill.svg`;
   });
   element.addEventListener("mouseleave", function () {
-    element.src = `Images/${element.dataset.name}.svg`;
+    element.src = `./../Images/${element.dataset.name}.svg`;
   });
 };
 

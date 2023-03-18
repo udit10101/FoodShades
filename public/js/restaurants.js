@@ -61,7 +61,7 @@ if (document.readyState == 'loading') {
       cartItems.removeChild(cartItems.firstChild)
     }
     updateCartTotal()
-    console.log("dome");
+    
   }
 
   function removeCartItem(event) {
@@ -84,7 +84,7 @@ if (document.readyState == 'loading') {
     let title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
     let price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
     let imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
-    console.log(imageSrc);
+   
     addItemToCart(title, price, imageSrc)
     updateCartTotal()
   }
@@ -129,7 +129,7 @@ if (document.readyState == 'loading') {
       total = total + (price * quantity)
     }
     document.getElementsByClassName('cart-total-price')[0].innerText = ' ₹' + total
-    console.log(total);
+  
   }
 
   function searchFnc() {
@@ -137,7 +137,7 @@ if (document.readyState == 'loading') {
           let input, filter, ul, li, a, i, txtValue;
           input = document.getElementById('searchbar');
           filter = input.value.toUpperCase();
-          console.log(filter);
+          
           restCont=document.getElementsByClassName('dishes-container')[0]
           res=document.getElementsByClassName('dishDisplay')
           resnames=restCont.getElementsByClassName('dishDisplayName')
@@ -152,7 +152,7 @@ if (document.readyState == 'loading') {
                   res[i].style.display="none "
               }
               if(!filter){
-                  console.log("empty rea");
+                 
                   for (i = 0; i < res.length; i++) {
                       res[i].style.display="flex"
                   }

@@ -7,8 +7,6 @@ setInterval(function () {
   if (Number(getComputedStyle(img1).opacity)) {
     img1.style.opacity = 0;
     img2.style.opacity = 100;
-    console.log(getComputedStyle(img1).opacity);
-    console.log(getComputedStyle(img2).opacity);
     return;
   }
 
