@@ -10,8 +10,6 @@
 
 ## Project Description
 
-Food Ordering application for webkriti.
-
 For Customers
 
 - Users can create their account in our database and sign in.
@@ -35,25 +33,29 @@ For Restaurant Owners
 
 # Screen shots
 
-<img src="assets/images/landing_page1.jpeg"></img>
-<img src="assets/images/landing_page2.jpeg"></img>
-<img src="assets/images/signin1.jpeg"></img>
-<img src="assets/images/signin2.jpeg"></img>
-<img src="assets/images/feed.jpeg"></img>
-<img src="assets/images/create_a_post.jpeg"></img>
-<img src="assets/images/feedback.jpeg"></img>
-<img src="assets/images/view_profile.jpeg"></img>
-<img src="assets/images/edit_delete_post.jpeg"></img>
-<img src="assets/images/edit_profile.jpeg"></img>
-<img src="assets/images/startup.jpeg"></img>
+<img src="public/Screenshot/SignIn.png"></img>
+<img src="publicScreenshot/logIn.png"></img>
+<img src="public/Screenshot/RestaurantOwnerAuth.png"></img>
+<img src="public/Screenshot/indexpage.png"></img>
+<img src="public/Screenshot/Homepage.png"></img>
+<img src="public/Screenshot/HomepageRestaurant.png"></img>
+<img src="public/Screenshot/RestaurantPage.png"></img>
+<img src="public/Screenshot/AccountDetails.png"></img>
+<img src="public/Screenshot/ChangePassword.png"></img>
+<img src="public/Screenshot/PastOrders.png"></img>
+<img src="public/Screenshot/orderdetails.png"></img>
+<img src="public/Screenshot/AddDishModal.png"></img>
+<img src="public/Screenshot/EditDishModal.png"></img>
 
 ### 🏠 [Homepage](/public)
 
-### ✨ [Deployed site](https://foodshades.herokuapp.com/)
+### ✨ [Deployed site](https://foodshades.up.railway.app/)
 
 # Features Implemented
 
 ## Features
+
+### FrontEnd
 
 1. Landing page:
 
@@ -92,25 +94,56 @@ For Restaurant Owners
 - The restaurant owner can edit their existing dish, by using the Edit Dish Button, then a modal window would pop up, which contains the dish information, that can be edited - dish name, image link, price, catergory, and description.
 - Now the onwer can also add new dish using the Add Dish Button, and all the above details must be filled.
 
+### Back-End
+
+- Get Routes
+
+```
+/
+/home
+/useraccount
+/users/login
+/users/logout
+/VegOnly
+/ByRating
+/ByDeliveryTime
+/Category=:dish
+/Restaurants
+/form=:restname
+/resAuth
+/orderDetails
+/pastOrders
+```
+
+- Post Routes
+
+```
+/users/register
+/resUpdate=:restname
+/updateUserInfo
+/updateUserPassword
+/cartItems
+/ratingUpdate
+```
+
 # Technologies/Libraries/Packages Used
 
-| Packages                | README                                                                                               |
-| ----------------------- | ---------------------------------------------------------------------------------------------------- |
-| bcrypt                  | To store hashed password in database                                                                 |
-| dotenv                  | To keep db connection string, client id, client secret key safe                                      |
-| nodemon                 | To run application in dev mode                                                                       |
-| pg                      | To Connect to AWS RDS                                                                                |
-| body-parser             | To process data sent in an HTTP request body                                                         |
-| ejs                     | To Embed JavaScript code in a template that is then used to generate HTML                            |
-| express-flash           | To Implement flash messages                                                                          |
-| express-session         | To store or access session data                                                                      |
-| passport                | to authenticate requests, which it does through an extensible set of plugins known as strategies     |
-| passport-local          | Passport strategy for authenticating with a username and password                                    |
-
-
-
+| Packages        | README                                                                                           |
+| --------------- | ------------------------------------------------------------------------------------------------ |
+| bcrypt          | To store hashed password in database                                                             |
+| dotenv          | To keep db connection string, client id, client secret key safe                                  |
+| nodemon         | To run application in dev mode                                                                   |
+| pg              | To Connect to AWS RDS                                                                            |
+| body-parser     | To process data sent in an HTTP request body                                                     |
+| ejs             | To Embed JavaScript code in a template that is then used to generate HTML                        |
+| express-flash   | To Implement flash messages                                                                      |
+| express-session | To store or access session data                                                                  |
+| passport        | to authenticate requests, which it does through an extensible set of plugins known as strategies |
+| passport-local  | Passport strategy for authenticating with a username and password                                |
 
 ## Local Setup
+
+execute node app.js in terminal after cloning the project
 
 Note that database connection string, passport client id & secret keys are in env file which are not uploaded on github
 
@@ -124,9 +157,9 @@ Note that database connection string, passport client id & secret keys are in en
 
 ### Udit Karan Tomar (2021IMT-104)
 
-- Github: [@udit10101](hhttps://github.com/udit10101)
+- Github: [@udit10101](https://github.com/udit10101)
 - LinkedIn: [@udit-tomar](https://www.linkedin.com/in/udit-tomar-a07323235/)
-- Gmail: [mail](mailto:bandarysohan24@gmail.com)
+- Gmail: [mail](mailto:uditkarantomar2003@gmail.com)
 - Instagram: [@uditktomar](https://www.instagram.com/uditktomar/)
 
 ### Pranav Panwar (2021IMT-074)
@@ -134,8 +167,13 @@ Note that database connection string, passport client id & secret keys are in en
 - Github: [@pawarpranav83](https://github.com/pawarpranav83)
 - LinkedIn: [@pranav-pawar](https://www.linkedin.com/in/pranav-pawar-b54954242/)
 - Gmail: [mail](mailto:pawar.pranav83@gmail.com)
-- Instagram: [@pranav.pawar_](https://www.instagram.com/pranav.pawar_/)
+- Instagram: [@pranav.pawar\_](https://www.instagram.com/pranav.pawar_/)
+
+## Mentors:
+
+We are very thankful to our mentors [@Sohan2410](https://github.com/sohan2410) Sir, kartikey Sir, and Chirag sir who helped us immensely in our website,
+even at festive season too :)
 
 ## Show your support
 
-Give a ⭐️ if this project helped you!
+Give a ⭐️ to this project if you liked it
